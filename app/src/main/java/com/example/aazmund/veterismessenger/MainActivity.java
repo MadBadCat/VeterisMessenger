@@ -101,9 +101,9 @@ public class MainActivity extends AppCompatActivity {
             protected void populateView(View v, Messenger model, int position) {
                 // получение референсов для показа лист_итем
                 TextView messageText,messageUser,messegeTime;
-                messageText = (TextView)findViewById(R.id.message_text);
-                messageUser = (TextView)findViewById(R.id.message_user);
-                messegeTime = (TextView)findViewById(R.id.message_time);
+                messageText = (TextView) v.findViewById(R.id.message_text);
+                messageUser = (TextView) v.findViewById(R.id.message_user);
+                messegeTime = (TextView) v.findViewById(R.id.message_time);
 
                 messageText.setText(model.getMessengerText());
                 messageUser.setText(model.getMessengerUser());
